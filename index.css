@@ -62,12 +62,18 @@ li a {
   font-size: 1.125rem;
   font-weight: 500;
   letter-spacing: 0.025rem;
+  text-overflow: ellipsis;
+  text-wrap-mode: nowrap;
+  text-wrap: nowrap;
+  white-space: nowrap;
 }
 li a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 footer {
-  background-color: rgba(255, 255, 255, 0.03);
+  background-color: #181818;
+  background: linear-gradient(#181818, #101010);
+  box-shadow: 0 0 0.5rem 0.25rem rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,6 +101,7 @@ footer {
   margin: auto;
   color: #000;
   background-color: #0f8;
+  box-shadow: 0 0 0.5rem 0.25rem rgba(0, 0, 0, 0.2);
   border-radius: 1.25rem;
   padding: 0.5rem 1rem;
   transition: all 0.1s;
@@ -103,4 +110,5 @@ footer {
 #add:focus {
   background-color: #1ed760;
   transform: scale(1.04);
+  box-shadow: 0 0 0.5rem 0.375rem rgba(0, 0, 0, 0.3);
 }
