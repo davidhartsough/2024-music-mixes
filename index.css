@@ -1,0 +1,106 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+:root {
+  --ff: ui-sans-serif, system-ui, -apple-system, "BlinkMacSystemFont",
+    "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bg: #121212;
+  --fg: #fafafa;
+}
+html,
+body {
+  background-color: var(--bg);
+  line-height: 1.5;
+  font-family: var(--ff);
+  margin: 0;
+  color: var(--fg);
+}
+header {
+  text-align: center;
+}
+h1 {
+  font-size: clamp(1rem, 12vw, 3rem);
+  font-weight: 200;
+  margin: 2vh 0 1vh;
+}
+a {
+  text-decoration: none;
+  color: #3df;
+  display: block;
+}
+p {
+  margin: 0;
+}
+section {
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  max-width: 34rem;
+}
+ul {
+  display: block;
+  padding: 0 0 5rem;
+  margin: 0;
+  list-style-type: none;
+  margin-inline: 0;
+  margin-block: 0;
+}
+li {
+  display: block;
+  padding: 0.5rem;
+  margin: 0;
+}
+li a {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.04);
+  color: #fff;
+  transition: background-color 0.5s;
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0.025rem;
+}
+li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+footer {
+  background-color: rgba(255, 255, 255, 0.03);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: clamp(5rem, 12vh, 7rem);
+}
+#add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0.025rem;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  user-select: none;
+  width: 10rem;
+  height: 2.5rem;
+  margin: auto;
+  color: #000;
+  background-color: #0f8;
+  border-radius: 1.25rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.1s;
+}
+#add:hover,
+#add:focus {
+  background-color: #1ed760;
+  transform: scale(1.04);
+}
